@@ -1,0 +1,17 @@
+inventoryselect sum(rental_id) as total from sakila.payment;
+select avg(customer_id) from sakila.payment;
+select max(customer_id) from sakila.payment;
+select * from sakila.payment;
+select min(amount) from sakila.payment;
+select truncate(amount,1) from sakila.payment;
+select ceil(amount) from sakila.payment;
+select floor(amount) from sakila.payment;
+select date(payment_date) as pdate from sakila.payment;
+select time(payment_date) as ptime from sakila.payment;
+select datediff(last_update, payment_date) as no_of_days from sakila.payment;
+select day(payment_date) as day_no from sakila.payment;
+select dayname(payment_date) as days from sakila.payment;
+select monthname(payment_date) as pdate from sakila.payment;
+select year(payment_date) as pdate from sakila.payment;
+select hour(payment_date) as pdate from sakila.payment;
+select minute(payment_date) as pdate from sakila.payment;
